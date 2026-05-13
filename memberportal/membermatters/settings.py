@@ -44,7 +44,7 @@ OIDC_OP_AUTHORIZATION_ENDPOINT = os.environ.get(
     "MM_OIDC_OP_AUTHORIZATION_ENDPOINT", None
 )
 OIDC_OP_TOKEN_ENDPOINT = os.environ.get("MM_OIDC_OP_TOKEN_ENDPOINT", None)
-OIDC_OP_USER_ENDPOINT = os.environ.get("MM_OIDC_OP_USER_ENDPOINT", None
+OIDC_OP_USER_ENDPOINT = os.environ.get("MM_OIDC_OP_USER_ENDPOINT", None)
 OIDC_OP_JWKS_ENDPOINT = os.environ.get("MM_OIDC_OP_JWKS_ENDPOINT", None)
 # Set the following to False if you want your MM admin to create a user & profile (matches on email address) instead of creating from the Idp
 OIDC_CREATE_USER = os.environ.get("MM_OIDC_CREATE_USER", True)
