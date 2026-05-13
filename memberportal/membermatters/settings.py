@@ -37,6 +37,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 ### mozilla-django-oidc config
 # get these from your IDP
+OIDC_RP_SIGN_ALGO = os.environ.get("MM_OIDC_SIGN_ALGO", "RS256")
 OIDC_RP_CLIENT_ID = os.environ.get("MM_OIDC_CLIENT_ID", None)
 OIDC_RP_CLIENT_SECRET = os.environ.get("MM_OIDC_CLIENT_SECRET", None)
 OIDC_OP_AUTHORIZATION_ENDPOINT = os.environ.get(
