@@ -37,6 +37,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 ### mozilla-django-oidc config
 # get these from your IDP
+OIDC_RP_SIGN_ALGO = os.environ.get("MM_OIDC_SIGN_ALGO", "RS256")
 OIDC_RP_CLIENT_ID = os.environ.get("MM_OIDC_CLIENT_ID", None)
 OIDC_RP_CLIENT_SECRET = os.environ.get("MM_OIDC_CLIENT_SECRET", None)
 OIDC_OP_AUTHORIZATION_ENDPOINT = os.environ.get(
@@ -44,6 +45,7 @@ OIDC_OP_AUTHORIZATION_ENDPOINT = os.environ.get(
 )
 OIDC_OP_TOKEN_ENDPOINT = os.environ.get("MM_OIDC_OP_TOKEN_ENDPOINT", None)
 OIDC_OP_USER_ENDPOINT = os.environ.get("MM_OIDC_OP_USER_ENDPOINT", None)
+OIDC_OP_JWKS_ENDPOINT = os.environ.get("MM_OIDC_OP_JWKS_ENDPOINT", None)
 # Set the following to False if you want your MM admin to create a user & profile (matches on email address) instead of creating from the Idp
 OIDC_CREATE_USER = os.environ.get("MM_OIDC_CREATE_USER", True)
 # Extend token validity window, default is 15 minutes
